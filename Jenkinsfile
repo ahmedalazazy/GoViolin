@@ -16,7 +16,7 @@ pipeline {
         stage('pushing image') {
             steps {
                 script {
-                    docker.withRegistry('', registryCredential) {
+                    docker.withRegistry("", registryCredential) {
                         sh 'docker push ahmedal3zazy/instabug:3 '
                     }
             }
@@ -26,4 +26,5 @@ pipeline {
     }
 
 
+  }
 }
