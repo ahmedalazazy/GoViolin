@@ -15,7 +15,7 @@ pipeline {
        
         stage('pushing image') {
             steps {
-                sh ' echo "hi"'
+                sh 'docker push ahmedal3zazy/instabug:3 '
             }
             
         }
