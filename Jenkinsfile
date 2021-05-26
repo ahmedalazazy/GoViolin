@@ -9,12 +9,15 @@ pipeline {
 
         stage('building image ') {
             steps {
-                sh 'docker build ahmedal3zazy/instabug:3'
+                sh 'docker build -t ahmedal3zazy/instabug:3 . '
             }
         }
        
         stage('pushing image') {
-            sh ' echo "hi"'
+            steps {
+                sh ' echo "hi"'
+            }
+            
         }
        
     }
