@@ -15,6 +15,7 @@ pipeline {
        
         stage('pushing image') {
             steps {
+                withDockerRg
                 sh 'docker push ahmedal3zazy/instabug:3 '
             }
             
