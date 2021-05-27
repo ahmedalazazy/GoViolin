@@ -3,7 +3,7 @@ pipeline {
     environment {
         registry = "ahmedal3zazy/instabug"
         registryCredential = "docker-cred"
-        REPORTING_EMAIL = "smtp.mailtrap.io"
+        REPORTING_EMAIL = "ahmedal3zazy900@gmail.com"
     }
     stages{
         stage("Building image") {
