@@ -4,7 +4,6 @@ pipeline {
         registry = "ahmedal3zazy/instabug"
         registryCredential = "docker-cred"
         REPORTING_EMAIL = "ahmedal3zazy900@gmail.com"
-        kubeconfigId = "kubeconfigId"
     }
     stages{
         stage("Building image") {
@@ -39,11 +38,5 @@ pipeline {
             }
         }
 
-        stage("Deploying") {
-            steps {
-                script {
-                   kubernetesDeploy(configs: "deployment.yml", kubeconfigId: kubeconfigId)
-                }
-            }
-        }
     }
+}
