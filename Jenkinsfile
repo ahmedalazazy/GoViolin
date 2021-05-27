@@ -10,7 +10,7 @@ pipeline {
             steps {
                 catchError {
                     script {
-                        dockerImage = docker.build(registry + ":$BUILD_NUMBER")
+                        dockermage = docker.build(registry + ":$BUILD_NUMBER")
                     }
                 }
             }
